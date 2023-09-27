@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #1b1c31;
+  --secondary-color: #aed4f2;
+  --third-color: #e9f8ff;
+  --highlight-color: #ee3aa2;
+  --second-highlight-color: #ebbc5b;
+  --true-color: #00e5a1;
+  --false-color: #ff6086;
+  --border-radius: 10px;
+  --border-style: dotted;
+
+  color: beige;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+h2.score {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  border-style: var(--border-style);
+  border-color: var(--second-highlight-color);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 5%;
+}
+
+div {
+  display: grid;
+  background-color: beige;
+  color: #101021;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #ee3aa2;
+}
+
+h2 {
+  color: #ee3aa2;
+}
