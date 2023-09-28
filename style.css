@@ -18,6 +18,9 @@ body {
   background-color: var(--primary-color);
 }
 
+body img {
+  max-height: 40vh;
+}
 
 h1 {
   color: var(--third-color);
@@ -31,8 +34,13 @@ section {
   
 }
 
+.score {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
 .gameboy {
-  background-color: #c1c1c9; 
+  background-color: var(--secondary-color); 
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--highlight-color);
@@ -55,6 +63,7 @@ section {
   align-items: center;
   color: var(--highlight-color);
   text-align: center;
+  font-weight: bold;
     
   
   
@@ -67,7 +76,7 @@ li {
   justify-content: center;
   align-items: center;
   color: var(--false-color);
-  padding: 15px
+  padding: 15px;
 }
 
 a {
@@ -92,7 +101,7 @@ a {
 
 
 button {
-  padding: 5px 20px;
+  padding: 5px 50px;
   background-color: rgb(18, 15, 18);
   border: none;
   border-radius: 5px;
