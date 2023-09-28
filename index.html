@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquette projet quizz</title>
+    <title>Quizz 2PAC-MAN</title>
     <!-- logo pac-man -->
     <link rel="shortcut icon" href="logo pac--man.png  ">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/script.js" defer></script>
   </head>
 
   <body>
@@ -15,7 +16,8 @@
 
     <Titre>
       <h1>Bienvenue sur le quizz 2PAC-MAN</h1>
-      <h2>Score:</h2>
+      <h2>Ton score:</h2>
+      <p id="score"></p>
     </Titre>
 
     <section>
@@ -25,9 +27,9 @@
           Question 1 : <br />Avant d'être rappeur, 2 Pac a démarrer sa carrière
           comme ?
         </h2>
-        <h6>Réponse A: Danseur comédien</h6>
+        <h4>Réponse A: Danseur comédien</h4>
         <h4>Réponse B: Roady Danseur</h4>
-        <h4>Réponse C: Comédien Roady</h4>
+        <h4 >Réponse C: Comédien Roady</h4>
         <button><a ref="https://fr.wikipedia.org/wiki/Tupac_Shakur">En savoir plus</a></button>
       </div>
 
@@ -38,7 +40,7 @@
           Question 2 : <br />
           Quel était le premier nom du jeu Pac-Man ?
         </h2>
-        <h6>Réponse A: Puc-Man</h6>
+        <h4 class="right-answer">Réponse A: Puc-Man</h4>
         <h4>Réponse B: Pack-Man</h4>
         <h4>Réponse C: Poc-Man</h4>
         <button><a ref="https://fr.wikipedia.org/wiki/Pac-Man">En savoir plus</a></button>
@@ -50,10 +52,10 @@
           Question 3 : <br />
           Que groupe français interprête des musiques de jeu ?
         </h2>
-        <h5>Réponse A: The Mégas</h5>
-        <h4>Réponse B: Méga Ran</h4>
-        <h6>Réponse C: Pixxel</h6>
-        <h7><a ref="https://www.facebook.com/Pixxel.band/?locale">En savoir plus</a></h7>
+        <h4 class="b">Réponse A: The Mégas</h4>
+        <h4 class="bad-answer">Réponse B: Méga Ran</h4>
+        <h4 class="right-answer">Réponse C: Pixxel</h4>
+        <button><a ref="https://www.facebook.com/Pixxel.band/?locale">En savoir plus</a></button>
       </div>
 
       <!-- questionnaire 4 -->
@@ -64,9 +66,9 @@
         </h2>
         <h4>Réponse A: Zelda</h4>
         <h4>Réponse B: Pokémon</h4>
-        <h6>Réponse C: Elite</h6>
-        <h7><a ref="https://fr.wikipedia.org/wiki/Elite_(jeu_vidéo)"
-            >En savoir plus !</a></h7>
+        <button class="a">Réponse C: Elite</button>
+        <button><a ref="https://fr.wikipedia.org/wiki/Elite_(jeu_vidéo)"
+            >En savoir plus !</a></button>
       </div>
 
       <!-- questionnaire 5 -->
@@ -74,7 +76,7 @@
         <h2>Question 5: <br /></h2>
         <h4>Réponse A: Choix 1</h4>
         <h4>Réponse B: Choix 2</h4>
-        <h6>Réponse C: Explication</h6>
+        <h4>Réponse C: Explication</h4>
         <button><a ref="https://fr.wikipedia.org/wiki/Falco_(chanteur)"
             >En savoir plus !</a></button>
       </div>
@@ -85,8 +87,8 @@
         <h3>Réponse A: Choix 1</h3>
         <h3>Réponse B: Choix 2</h3>
         <h4>Réponse C: Explication</h4>
-        <h7><a ref="https://www.culture-games.com/personnalites/kondo-koji"
-            >En savoir plus !</a></h7>
+        <button><a ref="https://www.culture-games.com/personnalites/kondo-koji"
+            >En savoir plus !</a></button>
       </div>
     </section>
 
@@ -94,5 +96,13 @@
       <h5>Signature de l'équipe</h5>
       <h5>Mot de remerciement</h5>
     </section>
+    <footer>
+      
+        <p>
+          Le footer
+        </p>
+      
+    </footer>
+
   </body>
 </html>

@@ -8,19 +8,22 @@
   --false-color: #ff6086;
   --border-radius: 10px;
   --border-style: dotted;
-
-  color: beige;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   background-color: var(--primary-color);
 }
 
+h1 {
+  color: var(--third-color);
+}
+
 h2.score {
   color: var(--primary-color);
-  background-color: var(--secondary-color);
+  background-color: var(--third-color);
   border-radius: var(--border-radius);
   border-style: var(--border-style);
   border-color: var(--second-highlight-color);
@@ -33,17 +36,38 @@ section {
   margin: 5%;
 }
 
+footer {
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
 div {
   display: grid;
-  background-color: beige;
-  color: #101021;
+  background-color: var(--third-color);
+  color: var(--primary-color);
   border-radius: 10px;
   border-style: dashed;
-  border-color: #ee3aa2;
+  border-color: var(--highlight-color);
+  padding: 10px;
+  gap: 10px;
+}
+
+
+
+h4.div {
+  background-color: var(--secondary-color);
+  
+}
+
+button {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--third-color)
+  
 }
 
 h2 {
-  color: #ee3aa2;
+  color: var(--highlight-color);
   text-align: center;
 }
 
