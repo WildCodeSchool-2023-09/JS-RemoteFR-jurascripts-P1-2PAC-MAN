@@ -13,11 +13,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+header {
+  text-align: center;
+  font-size: 30px;
+}
 body {
   background-color: var(--primary-color);
 }
- 
+
 body img {
   max-height: 40vh;
 }
@@ -31,7 +34,6 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin: 5%;
-  
 }
 
 .score {
@@ -40,21 +42,19 @@ section {
 }
 
 .gameboy {
-  background-color: var(--secondary-color); 
+  background-color: var(--secondary-color);
+
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--highlight-color);
   padding: 40px 40px 0px;
-  
 }
 
 .ecran {
- background-color:#89e0c6;
- padding: 5px;
- border: 15px solid grey;
- border-radius: 1px;
- 
- 
+  background-color: #89e0c6;
+  padding: 5px;
+  border: 15px solid grey;
+  border-radius: 1px;
 }
 
 .question {
@@ -63,13 +63,9 @@ section {
   align-items: center;
   color: var(--highlight-color);
   text-align: center;
+
   font-weight: bold;
-    
-  
-  
-
 }
-
 
 li {
   display: flex;
@@ -89,16 +85,12 @@ a {
   color: black;
   transition: 0.3s all ease-in-out;
   justify-content: center;
-
-
 }
-  
-  footer {
+
+footer {
   background-color: var(--primary-color);
   color: var(--third-color);
 }
-
-
 
 button {
   padding: 5px 50px;
@@ -110,4 +102,13 @@ button {
   transition: 0.3s all ease-in-out;
 }
 
+container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+footer p {
+  text-align: center;
+  font-size: 30px;
+}
