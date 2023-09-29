@@ -13,13 +13,22 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  text-align: center;
+  font-size: 30px;
+}
 body {
   background-color: var(--primary-color);
+}
+
+body img {
+  max-height: 40vh;
 }
 
 h1 {
   color: var(--third-color);
 }
+
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,8 +36,14 @@ section {
   margin: 5%;
 }
 
+.score {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
 .gameboy {
-  background-color: #c1c1c9;
+  background-color: var(--secondary-color);
+
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--highlight-color);
@@ -48,6 +63,8 @@ section {
   align-items: center;
   color: var(--highlight-color);
   text-align: center;
+
+  font-weight: bold;
 }
 
 li {
@@ -76,11 +93,22 @@ footer {
 }
 
 button {
-  padding: 5px 20px;
+  padding: 5px 50px;
   background-color: rgb(18, 15, 18);
   border: none;
   border-radius: 5px;
   color: var(--third-color);
   font-weight: 600;
   transition: 0.3s all ease-in-out;
+}
+
+container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
 }
