@@ -3,7 +3,8 @@
   --secondary-color: #aed4f2;
   --third-color: #e9f8ff;
   --highlight-color: #ee3aa2;
-  --second-highlight-color: #ebbc5b;
+  --vertgameboy-color: #78BFD6;
+  --vertcontourGameboy-color: #41717B;
   --true-color: #00e5a1;
   --false-color: #ff6086;
   --border-radius: 10px;
@@ -28,7 +29,23 @@ body img {
 h1 {
   color: var(--third-color);
 }
+header>p {
+  font-size: 1,02rem;
+  color: var(--third-color);
+}
 
+
+.score p{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--third-color);
+}
+
+.gameboy p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -37,24 +54,29 @@ section {
 }
 
 .score {
-  color: var(--secondary-color);
+  
   font-size: 2rem;
+  background-color: var(--highlight-color);
+  padding: 20px 40px;
+  max-width: 40vw;
+  border-radius: var(--border-radius);
+  justify-content: center;
+
 }
 
 .gameboy {
   background-color: var(--secondary-color);
-
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--highlight-color);
-  padding: 40px 40px 0px;
+  padding: 40px 40px;
 }
 
 .ecran {
-  background-color: #89e0c6;
+  background-color: var(--vertgameboy-color);
   padding: 5px;
-  border: 15px solid grey;
-  border-radius: 1px;
+  border: 15px solid var(--vertcontourGameboy-color);
+  border-radius: 10px;
 }
 
 .question {
@@ -77,12 +99,11 @@ li {
 
 a {
   display: flex;
-  padding: 5px 20px;
-  padding-bottom: 20px;
-  background-color: #c1c1c9;
-  border: none;
-  border-radius: 5px;
-  color: black;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: var(--third-color);
   transition: 0.3s all ease-in-out;
   justify-content: center;
 }
@@ -93,13 +114,14 @@ footer {
 }
 
 button {
-  padding: 5px 50px;
-  background-color: rgb(18, 15, 18);
+  padding: 25px 50px;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 5px;
-  color: var(--third-color);
+  color: var(--primary-color);
   font-weight: 600;
   transition: 0.3s all ease-in-out;
+  font-size: 1.1rem;
 }
 
 container {
@@ -108,7 +130,12 @@ container {
   align-items: center;
 }
 
+footer {
+  margin-bottom: 20px;
+}
+
 footer p {
   text-align: center;
-  font-size: 30px;
+  font-size: 0.8rem;
+  
 }
