@@ -1,10 +1,17 @@
-const badAnswer = document.querySelector(".bad_answer");
-const badAudio = new Audio("/assets/pacman_death.mp3");
+// const badAnswer = document.querySelectorAll(".bad_answer");
+// const badAudio = new Audio("/assets/pacman_death.mp3");
+// const goodAnswer = document.querySelectorAll(".good_answer");
+// const goodAudio = new Audio("/assets/pacman_beginning.mp3");
+
+//  badAnswer.addEventListener('click', () => {
+//     badAudio.play();
+// }
+// ) 
+
+//  goodAnswer.addEventListener('click', () => {
+//     goodAudio.play();
+// }
+// ) 
 
 
- badAnswer.addEventListener('click', () => {
-    badAnswer.style.color = "#ff6086";
-    alert("Mauvaise réponse");
-    badAudio.play();
-}
-) 
+

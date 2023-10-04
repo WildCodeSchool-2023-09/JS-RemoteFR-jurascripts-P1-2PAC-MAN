@@ -6,11 +6,16 @@ const rightAnswer_question3 = document.querySelector("#reponse1_question3");
 const rightAnswer_question4 = document.querySelector("#reponse1_question4");
 const rightAnswer_question5 = document.querySelector("#reponse2_question5");
 const rightAnswer_question6 = document.querySelector("#reponse3_question6");
+const badAnswer = document.querySelectorAll(".bad_answer");
+const badAudio = new Audio("/assets/pacman_death.mp3");
+const goodAnswer = document.querySelectorAll(".good_answer");
+const goodAudio = new Audio("/assets/pacman_beginning.mp3");
+const finalAudio = new Audio ("/assets/2Pac_me_against_the_world.mp3")
 
-// rightAnswer.addEventListener("click", () => {
-//   rightAnswer.style.color = "#00e5a1";
-//   alert("Bravo !");
-// });
+
+goodAudio.volume = 0.2;
+badAudio.volume = 0.2;
+finalAudio.volume = 0.5;
 
 //tableau pour le comptage des points
 const arrayPoints = [0]; 
@@ -18,6 +23,7 @@ const scoreTitle = document.querySelector(".score");
 const result = document.createElement("p");
 result.classList.add("score");
 scoreTitle.appendChild(result);
+
 
 const pacManImage1 = document.getElementById("LogoPacMan1");
 const pacManImage2 = document.getElementById("LogoPacMan2");
@@ -60,12 +66,15 @@ reponseButtons.forEach((button) => {
     if (button.classList.contains("good_answer")) {
       button.style.backgroundColor = "#00e5a1";
       alert("Bravo tu as gagné 10 points !");
+      goodAudio.play();
       arrayPoints.push(10);
       const score = arrayPoints.reduce((acc, currentValue) => acc + currentValue);
       result.innerText = score;
       questionNumber++;
-      //musique bonne réponse
-
+     
+      if (score = 60) {
+        audioElement.play();
+      }
 
       if (questionNumber === 2) {
         changerImagePacMan(2);
@@ -73,12 +82,15 @@ reponseButtons.forEach((button) => {
         changerImagePacMan(4);
       } else if (questionNumber === 6) {
         changerImagePacMan(6);
-        //musique du final
+        // audioElement.play(); // Démarrez la lecture de la musique finale.
+        
       }
+
     } else {
       alert("Dommage. Réessaie !");
       button.style.backgroundColor = "#ff6086";
-      //musique mauvaise réponse
+      badAudio.play();
+      
     }
   });
 });
