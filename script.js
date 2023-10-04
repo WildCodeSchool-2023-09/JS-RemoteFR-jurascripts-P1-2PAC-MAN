@@ -1,4 +1,3 @@
-
 const rightAnswer = document.querySelector(".good_answer")
 const rightAnswer_question1 = document.querySelector("#reponse2_question1")
 const rightAnswer_question2 = document.querySelector("#reponse3_question2")
@@ -11,11 +10,10 @@ const badAudio = new Audio("/assets/pacman_death.mp3")
 const goodAnswer = document.querySelectorAll(".good_answer")
 const goodAudio = new Audio("/assets/pacman_beginning.mp3")
 const finalAudio = new Audio("/assets/2Pac_me_against_the_world.mp3")
-const Winning_Score = 60
 
 goodAudio.volume = 0.02
 badAudio.volume = 0.02
-finalAudio.volume = 0.5
+finalAudio.volume = 0.1
 
 //tableau pour le comptage des points
 const arrayPoints = [0]
@@ -23,7 +21,6 @@ const scoreTitle = document.querySelector(".score")
 const result = document.createElement("p")
 result.classList.add("score")
 scoreTitle.appendChild(result)
-
 
 const pacManImage1 = document.getElementById("LogoPacMan1")
 const pacManImage2 = document.getElementById("LogoPacMan2")
@@ -60,39 +57,35 @@ reponseButtons.forEach((button) => {
     })
 
     if (button.classList.contains("good_answer")) {
-      button.style.backgroundColor = "#00e5a1";
-      alert("Bravo tu as gagné 10 points !");
-      goodAudio.play();
-      arrayPoints.push(10);
-      const score = arrayPoints.reduce((acc, currentValue) => acc + currentValue);
-      result.innerText = score;
-      questionNumber++;
-     
+      button.style.backgroundColor = "#00e5a1"
+      alert("Bravo tu as gagné 10 points !")
+      goodAudio.play()
+      arrayPoints.push(10)
+      const score = arrayPoints.reduce(
+        (acc, currentValue) => acc + currentValue
+      )
+      result.innerText = score
+      questionNumber++
 
       if (questionNumber === 2) {
         changerImagePacMan(2)
       } else if (questionNumber === 4) {
         changerImagePacMan(4)
       } else if (questionNumber === 6) {
-        changerImagePacMan(6);
+        changerImagePacMan(6)
       }
-       // Vérifie si le score atteint 60
-       if (scoreTitle === Winning_Score) {
+      // Vérifie si le score atteint 60
+      if (score === 60) {
+        goodAudio.pause()
         finalAudio.play()
       }
-
     } else {
-
-      alert("Dommage. Réessaie !");
-      button.style.backgroundColor = "#ff6086";
-      badAudio.play();
+      alert("Dommage. Réessaie !")
+      button.style.backgroundColor = "#ff6086"
+      badAudio.play()
     }
-
-    
-  });
-});
-
-
+  })
+})
 
 export default arrayPoints
 
