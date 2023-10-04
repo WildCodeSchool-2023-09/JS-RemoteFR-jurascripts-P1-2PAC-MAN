@@ -3,8 +3,9 @@
   --secondary-color: #aed4f2;
   --third-color: #e9f8ff;
   --highlight-color: #ee3aa2;
-  --vertgameboy-color: #78BFD6;
-  --vertcontourGameboy-color: #41717B;
+  --vertgameboy-color: #78bfd6;
+  --vertcontourGameboy-color: #41717b;
+
   --true-color: #00e5a1;
   --false-color: #ff6086;
   --border-radius: 10px;
@@ -17,13 +18,16 @@
 header {
   text-align: center;
   font-size: 30px;
+  width: 100vw;
 }
+
 body {
   background-color: var(--primary-color);
 }
 
 body img {
-  max-height: 40vh;
+  max-height: 30%;
+  max-width: 30%;
 }
 
 h1 {
@@ -42,19 +46,24 @@ header>p {
   color: var(--third-color);
 }
 
+header>p {
+  font-size: 1.5rem;
+  color: var(--third-color);
+}
+
+.score p {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--third-color);
+}
+
 .gameboy p {
   color: var(--primary-color);
-  font-size: 1.2rem;
-}
-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 5%;
+  font-size: clamp(1.2rem 5vw 5rem);
 }
 
 .score {
-  
   font-size: 2rem;
   background-color: var(--highlight-color);
   padding: 20px 40px;
@@ -64,12 +73,18 @@ section {
 
 }
 
+section {
+  margin: 5%;
+}
+
 .gameboy {
   background-color: var(--secondary-color);
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--highlight-color);
-  padding: 40px 40px;
+  padding: 40px;
+  margin: 20px 0px;
+
 }
 
 .ecran {
@@ -83,9 +98,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--highlight-color);
   text-align: center;
-
   font-weight: bold;
 }
 
@@ -93,8 +106,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--false-color);
   padding: 15px;
+}
+
+ul {
+  padding-inline-start: 0px
 }
 
 a {
@@ -128,6 +144,11 @@ container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
+}
+
+footer {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -137,4 +158,16 @@ footer {
 footer p {
   text-align: center;
   font-size: 0.8rem;
+}
+
+
+/* Résolution Ecran d'ordinateur */
+
+@media screen and (min-width: 900px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 5%;
+  }
 }

@@ -3,34 +3,41 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quizz 2PAC-MAN</title>
   <!-- logo pac-man -->
   <link rel="shortcut icon" href="assets/Logo-2PAC-MAN-total_full-musique-14.png" />
   <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="/script.js" defer></script>
+
+  <script type="module" src="/script.js" defer></script>
   <script type="text/javascript" src="/event-bouton.js" defer></script>
 </head>
 
 <body>
   <header>
     <container>
-      <img src="Assets/Logo-2PAC-MAN_blanc_Blanc-19.png" alt="this is currently downloading" />
+      <img id="LogoPacMan1" src="assets/Logo-2PAC-MAN_blanc_Blanc-19.png" alt="this is currently downloading" />
 
-      <img src="Assets/Logo-2PAC-MAN_blanc_Blanc-19.png" />
+      <img id="LogoPacMan2" src="assets/Logo-2PAC-MAN_casquette-13.png" alt="logo Pac-Man" style="display: none" />
 
-      <img src="Assets/Logo-2PAC-MAN_blanc_Blanc-19.png" />
+      <img id="LogoPacMan3" src="assets/Logo-2PAC-MAN_full_color-12.png" alt="logo Pac-Man" style="display: none" />
+
+      <img id="LogoPacMan4" src="assets/Logo-2PAC-MAN-total_full-musique-14.png" alt="logo Pac-man"
+        style="display: none" />
     </container>
 
-      <h1>Bienvenue sur le quizz 2PAC-MAN</h1>
-      <p>Aide 2PAC-MAN à retrouver son inspiration musicale en répondant aux questions !</p>
-      <p>Profites-en pour parfaire ta culture musicale et gaming !</p>
+
+    <h1>Bienvenue sur le quizz 2PAC-MAN</h1>
+    <p>
+      Aide 2PAC-MAN à retrouver son inspiration musicale en répondant aux
+      questions !
+    </p>
+    <p>Profites-en pour parfaire ta culture musicale et gaming !</p>
     <container>
-    <div class="score">
-      <p>Ton score :</p>
-      <p> 4 </p>
-    </div>
+      <div class="score">
+        <p>Ton score :</p>
+        <!-- <p class="score">0</p> -->
+      </div>
     </container>
   </header>
 
@@ -44,9 +51,21 @@
           </p>
         </div>
         <ul class="reponse">
-          <li><button class="bad_answer">Danseur comédien</button></li>
-          <li><button class="good_answer">Roady Danseur</button></li>
-          <li><button class="bad_answer">Comédien Roady</button></li>
+          <li>
+            <button id="reponse1_question1" class="bad_answer">
+              Danseur comédien
+            </button>
+          </li>
+          <li>
+            <button id="reponse2_question1" class="good_answer">
+              Roady Danseur
+            </button>
+          </li>
+          <li>
+            <button id="reponse3_question1" class="bad_answer">
+              Comédien Roady
+            </button>
+          </li>
         </ul>
       </div>
       <a class="moreinfos" href="https://fr.wikipedia.org/wiki/Tupac_Shakur" target="_blank">En savoir plus</a>
@@ -58,9 +77,21 @@
           <p>Question 2 Quel était le premier nom du jeu Pac-Man ?</p>
         </div>
         <ul class="reponse">
-          <li><button class="bad_answer">Poc-Man</button></li>
-          <li><button class="bad_answer">Pack-Man</button></li>
-          <li><button class="good_answer">Puc-Man</button></li>
+          <li>
+            <button id="reponse1_question2" class="bad_answer">
+              Poc-Man
+            </button>
+          </li>
+          <li>
+            <button id="reponse2_question2" class="bad_answer">
+              Pack-Man
+            </button>
+          </li>
+          <li>
+            <button id="reponse3_question2" class="good_answer">
+              Puc-Man
+            </button>
+          </li>
         </ul>
       </div>
       <a class="moreinfos" href="https://fr.wikipedia.org/wiki/Pac-Man" target="_blank">En savoir plus</a>
@@ -74,9 +105,21 @@
           </p>
         </div>
         <ul class="reponse">
-          <li><button class="good_answer">Pixxel</button></li>
-          <li><button class="bad_answer">Méga Ran</button></li>
-          <li><button class="bad_answer">The Mégas</button></li>
+          <li>
+            <button id="reponse1_question3" class="good_answer">
+              Pixxel
+            </button>
+          </li>
+          <li>
+            <button id="reponse2_question3" class="bad_answer">
+              Méga Ran
+            </button>
+          </li>
+          <li>
+            <button id="reponse3_question3" class="bad_answer">
+              The Mégas
+            </button>
+          </li>
         </ul>
       </div>
       <a class="moreinfos" href="https://www.facebook.com/Pixxel.band/?locale" target="_blank">En savoir plus</a>
@@ -88,12 +131,22 @@
           <p>Question 4 Quel est le premier jeu Open World ?</p>
         </div>
         <ul class="reponse">
-          <li><button class="good_answer">Elite</button></li>
-          <li><button class="bad_answer">Pokémon</button></li>
-          <li><button class="bad_answer">Zelda</button></li>
+          <li>
+            <button id="reponse1_question4" class="good_answer">Elite</button>
+          </li>
+          <li>
+            <button id="reponse2_question4" class="bad_answer">
+              Pokémon
+            </button>
+          </li>
+          <li>
+            <button id="reponse3_question4" class="bad_answer">Zelda</button>
+          </li>
         </ul>
       </div>
+
       <a class="moreinfos" href="https://fr.wikipedia.org/wiki/Elite_(jeu_vidéo)" target="_blank">En savoir plus</a>
+
     </div>
 
     <div class="gameboy">
@@ -102,12 +155,22 @@
           <p>Question 5 Qui a été le premier rappeur blanc ?</p>
         </div>
         <ul class="reponse">
-          <li><button class="bad_answer">Beasties Boy</button></li>
-          <li><button class="good_answer">Falco</button></li>
-          <li><button class="bad_answer">Eminem</button></li>
+          <li>
+            <button id="reponse1_question5" class="bad_answer">
+              Beasties Boy
+            </button>
+          </li>
+          <li>
+            <button id="reponse2_question5" class="good_answer">Falco</button>
+          </li>
+          <li>
+            <button id="reponse3_question5" class="bad_answer">Eminem</button>
+          </li>
         </ul>
       </div>
+
       <a class="moreinfos" href="https://fr.wikipedia.org/wiki/Falco_(chanteur)" target="_blank">En savoir plus</a>
+
     </div>
 
     <div class="gameboy">
@@ -119,17 +182,36 @@
           </p>
         </div>
         <ul class="reponse">
-          <li><button class="bad_answer">The Legend of Zelda</button></li>
-          <li><button class="bad_answer">Final Fantasy</button></li>
-          <li><button class="good_answer">Super Mario Bros</button></li>
+          <li>
+            <button id="reponse1_question6" class="bad_answer">
+              The Legend of Zelda
+            </button>
+          </li>
+          <li>
+            <button id="reponse2_question6" class="bad_answer">
+              Final Fantasy
+            </button>
+          </li>
+          <li>
+            <button id="reponse3_question6" class="good_answer">
+              Super Mario Bros
+            </button>
+          </li>
         </ul>
       </div>
+
       <a class="moreinfos" href="https://www.culture-games.com/personnalites/kondo-koji" target="_blank">En savoir plus !</a>
+
     </div>
+    <!-- <audio id="music" src="chemin_vers_votre_fichier_audio.mp3"></audio> -->
   </section>
   <footer>
     <p>Équipe composée de Suzy - Valentin - Didier -Jordan</p>
-    <p>Remerciements à Tupac et Pac-man pour leus inspirations</p>
+    <p>
+      Remerciements à 2PAC-MAN pour leus inspirations et tout particulierement
+      à la justice Americaine pour l'arrestation du meutrier de notre cher
+      rappeur sans qui ce quizz n'aurait pas eu la meme saveur
+    </p>
   </footer>
 </body>
 
