@@ -11,6 +11,7 @@ const badAudio = new Audio("/assets/pacman_death.mp3")
 const goodAnswer = document.querySelectorAll(".good_answer")
 const goodAudio = new Audio("/assets/pacman_beginning.mp3")
 const finalAudio = new Audio("/assets/2Pac_me_against_the_world.mp3")
+const Winning_Score = 60
 
 goodAudio.volume = 0.02
 badAudio.volume = 0.02
@@ -67,9 +68,6 @@ reponseButtons.forEach((button) => {
       result.innerText = score;
       questionNumber++;
      
-      if (score = 60) {
-        audioElement.play();
-
 
       if (questionNumber === 2) {
         changerImagePacMan(2)
@@ -77,7 +75,10 @@ reponseButtons.forEach((button) => {
         changerImagePacMan(4)
       } else if (questionNumber === 6) {
         changerImagePacMan(6);
-  
+      }
+       // Vérifie si le score atteint 60
+       if (scoreTitle === Winning_Score) {
+        finalAudio.play()
       }
 
     } else {
@@ -85,9 +86,13 @@ reponseButtons.forEach((button) => {
       alert("Dommage. Réessaie !");
       button.style.backgroundColor = "#ff6086";
       badAudio.play();
+    }
 
-  })
-})
+    
+  });
+});
+
+
 
 export default arrayPoints
 
