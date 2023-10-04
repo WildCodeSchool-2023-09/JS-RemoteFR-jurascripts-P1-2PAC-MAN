@@ -1,3 +1,4 @@
+
 const rightAnswer = document.querySelector(".good_answer")
 const rightAnswer_question1 = document.querySelector("#reponse2_question1")
 const rightAnswer_question2 = document.querySelector("#reponse3_question2")
@@ -21,6 +22,7 @@ const scoreTitle = document.querySelector(".score")
 const result = document.createElement("p")
 result.classList.add("score")
 scoreTitle.appendChild(result)
+
 
 const pacManImage1 = document.getElementById("LogoPacMan1")
 const pacManImage2 = document.getElementById("LogoPacMan2")
@@ -57,33 +59,33 @@ reponseButtons.forEach((button) => {
     })
 
     if (button.classList.contains("good_answer")) {
-      button.style.backgroundColor = "#00e5a1"
-      alert("Bravo tu as gagné 10 points !")
-      goodAudio.play()
-      arrayPoints.push(10)
-      const score = arrayPoints.reduce(
-        (acc, currentValue) => acc + currentValue
-      )
-      result.innerText = score
-      questionNumber++
+      button.style.backgroundColor = "#00e5a1";
+      alert("Bravo tu as gagné 10 points !");
+      goodAudio.play();
+      arrayPoints.push(10);
+      const score = arrayPoints.reduce((acc, currentValue) => acc + currentValue);
+      result.innerText = score;
+      questionNumber++;
+     
+      if (score = 60) {
+        audioElement.play();
 
-      if ((score = 60)) {
-        audioElement.play()
-      }
 
       if (questionNumber === 2) {
         changerImagePacMan(2)
       } else if (questionNumber === 4) {
         changerImagePacMan(4)
       } else if (questionNumber === 6) {
-        changerImagePacMan(6)
+        changerImagePacMan(6);
+  
       }
+
     } else {
-      alert("Dommage. Réessaie !")
-      button.style.backgroundColor = "#ff6086"
-      badAudio.play()
-      //musique mauvaise réponse
-    }
+
+      alert("Dommage. Réessaie !");
+      button.style.backgroundColor = "#ff6086";
+      badAudio.play();
+
   })
 })
 
