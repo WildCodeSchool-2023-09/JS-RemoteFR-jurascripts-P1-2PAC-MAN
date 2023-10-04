@@ -5,6 +5,7 @@
   --highlight-color: #ee3aa2;
   --vertgameboy-color: #78bfd6;
   --vertcontourGameboy-color: #41717b;
+
   --true-color: #00e5a1;
   --false-color: #ff6086;
   --border-radius: 10px;
@@ -32,6 +33,18 @@ body img {
 h1 {
   color: var(--third-color);
 }
+header>p {
+  font-size: 1,02rem;
+  color: var(--third-color);
+}
+
+
+.score p{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--third-color);
+}
 
 header>p {
   font-size: 1.5rem;
@@ -57,7 +70,7 @@ header>p {
   max-width: 40vw;
   border-radius: var(--border-radius);
   justify-content: center;
-  font-size: 2rem;
+
 }
 
 section {
@@ -71,6 +84,7 @@ section {
   border-color: var(--highlight-color);
   padding: 40px;
   margin: 20px 0px;
+
 }
 
 .ecran {
@@ -131,6 +145,10 @@ container {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+}
+
+footer {
+  margin-bottom: 20px;
 }
 
 footer {
