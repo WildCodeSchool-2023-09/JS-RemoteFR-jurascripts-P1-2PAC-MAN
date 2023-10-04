@@ -28,14 +28,14 @@ body {
 }
 
 header img {
-  top: 0;
-  max-height: 15%;
+ 
+  max-height: auto;
   max-width: 15%;
 }
 
 h1 {
   color: var(--third-color);
-  font-size: clamp(0.8rem 5vw 5rem);;
+  font-size: clamp(1.5rem 5vw 5rem);
 }
 header>p {
   font-size: clamp(1rem 5vw 5rem);
@@ -117,10 +117,7 @@ a {
   justify-content: center;
 }
 
-footer {
-  background-color: var(--primary-color);
-  color: var(--third-color);
-}
+
 
 button {
   padding: 25px 50px;
@@ -134,8 +131,8 @@ button {
 }
 
 container {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,10 +140,8 @@ container {
 }
 
 footer {
-  margin-bottom: 20px;
-}
-
-footer {
+  background-color: var(--primary-color);
+  color: var(--third-color);
   margin-bottom: 20px;
 }
 
