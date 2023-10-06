@@ -9,7 +9,7 @@ const badAnswer = document.querySelectorAll(".bad_answer")
 const badAudio = new Audio("pacman_death.mp3")
 const goodAnswer = document.querySelectorAll(".good_answer")
 const goodAudio = new Audio("./assets/pacman_beginning.mp3")
-const finalAudio = new Audio("2Pac_me_against_the_world.mp3")
+const finalAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/pacman_beginning.mp3")
 
 goodAudio.volume = 0.02
 badAudio.volume = 0.02
