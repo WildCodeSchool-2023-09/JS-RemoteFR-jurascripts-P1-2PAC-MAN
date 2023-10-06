@@ -11,9 +11,9 @@ const goodAnswer = document.querySelectorAll(".good_answer");
 const goodAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/pacman_beginning.mp3");
 const finalAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/2Pac_me_against_the_world.mp3");
 
-//goodAudio.volume = 0.02
-//badAudio.volume = 0.02
-//finalAudio.volume = 0.1
+goodAudio.volume = 0.02
+badAudio.volume = 0.02
+finalAudio.volume = 0.1
 
 //tableau pour le comptage des points
 const arrayPoints = [0]
