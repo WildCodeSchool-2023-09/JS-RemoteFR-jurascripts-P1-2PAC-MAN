@@ -1,3 +1,4 @@
+console.log("coucou");
 const rightAnswer = document.querySelector(".good_answer")
 const rightAnswer_question1 = document.querySelector("#reponse2_question1")
 const rightAnswer_question2 = document.querySelector("#reponse3_question2")
