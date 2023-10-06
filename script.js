@@ -58,7 +58,6 @@ reponseButtons.forEach((button) => {
 
     if (button.classList.contains("good_answer")) {
       button.style.backgroundColor = "#00e5a1"
-      alert("Bravo tu as gagné 10 points !")
       goodAudio.play()
       arrayPoints.push(10)
       const score = arrayPoints.reduce(
@@ -80,7 +79,6 @@ reponseButtons.forEach((button) => {
         finalAudio.play()
       }
     } else {
-      alert("Dommage. Réessaie !")
       button.style.backgroundColor = "#ff6086"
       badAudio.play()
     }
