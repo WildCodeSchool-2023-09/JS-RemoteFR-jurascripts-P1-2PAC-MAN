@@ -6,9 +6,9 @@ const rightAnswer_question4 = document.querySelector("#reponse1_question4")
 const rightAnswer_question5 = document.querySelector("#reponse2_question5")
 const rightAnswer_question6 = document.querySelector("#reponse3_question6")
 const badAnswer = document.querySelectorAll(".bad_answer")
-const badAudio = new Audio("pacman_death.mp3")
+const badAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/pacman_death.mp3")
 const goodAnswer = document.querySelectorAll(".good_answer")
-const goodAudio = new Audio("./assets/pacman_beginning.mp3")
+const goodAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/pacman_beginning.mp3")
 const finalAudio = new Audio("https://wildcodeschool-2023-09.github.io/JS-RemoteFR-jurascripts-P1-2PAC-MAN/assets/pacman_beginning.mp3")
 
 goodAudio.volume = 0.02
