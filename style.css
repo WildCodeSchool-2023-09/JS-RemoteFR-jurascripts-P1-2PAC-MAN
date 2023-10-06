@@ -114,10 +114,6 @@ section {
   font-weight: bold;
 }
 
-.question:hover {
-  font-size: 15px;
-  background-color: var(--secondary-color);
-}
 
 li {
   display: flex;
