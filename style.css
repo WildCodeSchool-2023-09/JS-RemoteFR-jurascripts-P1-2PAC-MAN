@@ -136,15 +136,15 @@ a {
   display: flex;
   padding: 5px 10px;
   margin: 10px 0px;
-  background-color: var(--vertgameboy-color);
+  background-color: var(--vertcontourGameboy-color);
   border-radius: 8px;
-  color: var(--primary-color);
+  color: var(--third-color);
   transition: 0.3s all ease-in-out;
   justify-content: center;
 }
 
 a:hover {
-  background-color: var(--vertcontourGameboy-color);
+  background-color: var(--primary-color);
   font-size: 1rem;
   color: var(--third-color);
 }
