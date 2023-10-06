@@ -8,7 +8,7 @@ const rightAnswer_question6 = document.querySelector("#reponse3_question6")
 const badAnswer = document.querySelectorAll(".bad_answer")
 const badAudio = new Audio("pacman_death.mp3")
 const goodAnswer = document.querySelectorAll(".good_answer")
-const goodAudio = new Audio("assets/pacman_beginning.mp3")
+const goodAudio = new Audio("./assets/pacman_beginning.mp3")
 const finalAudio = new Audio("2Pac_me_against_the_world.mp3")
 
 goodAudio.volume = 0.02
