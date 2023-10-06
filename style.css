@@ -15,8 +15,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header { 
- 
+header {
   text-align: center;
   width: 100vw;
   background-color: var(--primary-color);
@@ -28,7 +27,6 @@ body {
 }
 
 header img {
- 
   max-height: auto;
   max-width: 15%;
 }
@@ -37,19 +35,17 @@ h1 {
   color: var(--third-color);
   font-size: clamp(1.5rem 5vw 5rem);
 }
-header>p {
+header > p {
   font-size: clamp(1rem 5vw 5rem);
   color: var(--third-color);
 }
 
-
-.score p{
+.score p {
   font-size: clamp(0.5rem 5vw 5rem);
   color: var(--primary-color);
   font-weight: bold;
   color: var(--third-color);
 }
-
 
 .gameboy p {
   color: var(--primary-color);
@@ -63,7 +59,6 @@ header>p {
   max-width: 20vw;
   border-radius: var(--border-radius);
   justify-content: center;
-
 }
 
 section {
@@ -77,7 +72,6 @@ section {
   border-color: var(--highlight-color);
   padding: 40px;
   margin: 20px 0px;
-
 }
 
 .ecran {
@@ -95,6 +89,11 @@ section {
   font-weight: bold;
 }
 
+.question:hover {
+  font-size: 15px;
+  background-color: var(--secondary-color);
+}
+
 li {
   display: flex;
   justify-content: center;
@@ -103,31 +102,40 @@ li {
 }
 
 ul {
-  padding-inline-start: 0px
+  padding-inline-start: 0px;
 }
 
 a {
   display: flex;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin: 10px 0px;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  color: var(--third-color);
+  background-color: var(--vertgameboy-color);
+  border-radius: 8px;
+  color: var(--primary-color);
   transition: 0.3s all ease-in-out;
   justify-content: center;
 }
-
-
+a:hover {
+  background-color: #1b1c31;
+  font-size: 1rem;
+  color: var(--third-color);
+}
 
 button {
   padding: 25px 50px;
   background-color: var(--secondary-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   color: var(--primary-color);
   font-weight: 600;
   transition: 0.3s all ease-in-out;
   font-size: 1.1rem;
+  border-color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--vertcontourGameboy-color);
+  color: var(--third-color);
 }
 
 container {
@@ -149,7 +157,6 @@ footer p {
   text-align: center;
   font-size: 0.8rem;
 }
-
 
 /* Résolution Ecran d'ordinateur */
 
